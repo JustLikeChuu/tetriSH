@@ -1,0 +1,54 @@
+# Ref: https://github.com/MaJerle/c-code-style/blob/main/.clang-format
+# but modified to use K&R style braces bc im evil
+
+# --- Indentation ---
+IndentWidth: 4
+UseTab: Never
+TabWidth: 4
+ContinuationIndentWidth: 4
+IndentCaseLabels: false
+
+# --- Braces: classic K&R ---
+# Function definitions get the brace on their own line;
+# control statements (if/for/while/switch) keep the brace
+# attached to the same line (Linux style default)
+BreakBeforeBraces: Linux
+
+# --- Line length / wrapping ---
+ColumnLimit: 0
+AlignAfterOpenBracket: Align
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortEnumsOnASingleLine: false
+BinPackArguments: true
+BinPackParameters: true
+
+# --- Pointers/refs: Keep * next to variable name, like int* x---
+PointerAlignment: Left
+DerivePointerAlignment: false
+
+# --- Spacing ---
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+SpaceAfterCStyleCast: false
+SpacesInSquareBrackets: false
+SpaceBeforeAssignmentOperators: true
+
+# --- Control flow formatting ---
+IndentCaseBlocks: false
+BreakBeforeBinaryOperators: None
+BreakBeforeTernaryOperators: false
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+
+# --- Includes ---
+SortIncludes: false
+IncludeBlocks: Preserve
+
+# --- Misc ---
+ReflowComments: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+InsertNewlineAtEOF: true

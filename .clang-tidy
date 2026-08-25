@@ -1,0 +1,48 @@
+---
+# Naming checks for variable names, following K&R conventions
+Checks: >
+  -*,
+  readability-identifier-naming
+
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*'
+FormatStyle: none
+
+CheckOptions:
+  # Variables, parameters, struct/union members
+  - key: readability-identifier-naming.VariableCase
+    value: lower_case
+  - key: readability-identifier-naming.ParameterCase
+    value: lower_case
+  - key: readability-identifier-naming.MemberCase
+    value: lower_case
+  - key: readability-identifier-naming.ConstantMemberCase
+    value: UPPER_CASE
+    
+  # Functions
+  - key: readability-identifier-naming.FunctionCase
+    value: lower_case
+
+  # Types
+  - key: readability-identifier-naming.TypedefCase
+    value: CamelCase
+  - key: readability-identifier-naming.StructCase
+    value: CamelCase
+  - key: readability-identifier-naming.UnionCase
+    value: lower_case
+  - key: readability-identifier-naming.EnumCase
+    value: CamelCase
+  - key: readability-identifier-naming.EnumConstantCase
+    value: UPPER_CASE
+
+  # Macros and constants
+  - key: readability-identifier-naming.MacroDefinitionCase
+    value: UPPER_CASE
+  - key: readability-identifier-naming.ConstantCase
+    value: UPPER_CASE
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: UPPER_CASE
+
+  # Static (file-scope) variables/functions
+  - key: readability-identifier-naming.StaticVariableCase
+    value: lower_case
