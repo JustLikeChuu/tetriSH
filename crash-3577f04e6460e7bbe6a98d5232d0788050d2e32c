@@ -1,0 +1,5 @@
+ROSTER /room/0 HTTTP/1.0
+Player-Id: 1
+Content-Length: 30
+
+{count: 2, ids: TTP2 ]}

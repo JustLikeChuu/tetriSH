@@ -13,6 +13,7 @@ void setUp(void)
     memset(&test_state, 0, sizeof(GameState));
     srand(time(NULL));
 }
+
 void tearDown(void)
 {
 }
