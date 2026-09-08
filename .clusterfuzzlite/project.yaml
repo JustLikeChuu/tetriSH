@@ -1,0 +1,2 @@
+language : c
+# tells the tooling which base toolchain image to pull and which conventions to expect
